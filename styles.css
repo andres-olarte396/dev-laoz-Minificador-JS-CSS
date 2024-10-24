@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.minifier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, textarea, select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 500px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    height: 150px;
+    width: 500px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    white-space: pre-wrap; /* Para que respete los saltos de línea */
+}
+
+.error {
+    color: red;
+}
