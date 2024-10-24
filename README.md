@@ -1,54 +1,62 @@
-# Generador de Slugs
+# Minificador de JavaScript y CSS
 
-Este proyecto es una herramienta simple que convierte texto en slugs (URLs amigables). Es útil para generar rutas limpias y comprensibles, como las que se utilizan en blogs o sitios web.
+Este proyecto es una herramienta web que permite minificar y desminificar archivos de CSS y JavaScript. Es útil para mejorar el rendimiento de los sitios web al reducir el tamaño de los archivos.
 
 ## Características
 
-- Convierte texto en minúsculas.
-- Elimina caracteres no válidos (por ejemplo, caracteres especiales).
-- Reemplaza espacios por guiones (`-`).
-- Elimina guiones duplicados y guiones al principio y al final del slug.
+- Minificación de archivos JavaScript y CSS.
+- Desminificación de archivos JavaScript y CSS.
+- Interfaz simple y amigable.
 
-## Uso
+## Tecnologías utilizadas
 
-1. Escribe el texto que deseas convertir en el campo de entrada.
-2. Presiona el botón "Generar Slug".
-3. El slug generado se mostrará en la sección correspondiente.
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-## Requisitos del Proyecto
+## Cómo usar
 
-Este proyecto es una aplicación web simple basada en HTML, CSS y JavaScript. Solo necesitas un navegador web para ejecutarla.
+1. Clona este repositorio o descarga el archivo.
+2. Abre el archivo `index.html` en tu navegador.
+3. Selecciona el tipo de archivo (JavaScript o CSS).
+4. Ingresa el código en el área de texto.
+5. Haz clic en **Minificar** para reducir el tamaño del código.
+6. Haz clic en **Desminificar** para hacer que el código sea más legible.
 
-## Instrucciones de Instalación
+## Ejemplo de uso
 
-1. Clona este repositorio:
+- **Código JavaScript original**:
 
-    ```bash
-    git clone https://github.com/tu-usuario/generador-de-slugs.git
+    ```javascript
+    function hello() {
+        console.log("Hello, World!");
+    }
     ```
 
-2. Navega al directorio del proyecto:
+- **Código JavaScript minificado**:
 
-    ```bash
-    cd generador-de-slugs
+    ```javascript
+    function hello(){console.log("Hello, World!");}
     ```
 
-3. Abre el archivo `index.html` en tu navegador favorito.
+- **Código CSS original**:
 
-    ```bash
-    open index.html
+    ```css
+    body {
+        background-color: white;
+    }
     ```
 
-## Capturas de Pantalla
+- **Código CSS minificado**:
 
-### Interfaz del Generador de Slugs
-
-![Generador de Slugs](ruta/a/la/captura.png)
+    ```css
+    body{background-color:white;}
+    ```
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar esta herramienta o agregar nuevas funcionalidades, no dudes en hacer un fork de este repositorio y enviar un pull request.
+Las contribuciones son bienvenidas. Si tienes sugerencias o encuentras errores, por favor, abre un issue o envía un pull request.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+Este proyecto está bajo la licencia MIT.
