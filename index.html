@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minificador de JavaScript y CSS</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
-
-    <h1>Minificador de JavaScript y CSS</h1>
-    
-    <div class="minifier">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Minificador de JavaScript y CSS</h1>
+      <h4>
+        Este proyecto es una herramienta web que permite minificar y
+        desminificar archivos de CSS y JavaScript. Es útil para mejorar el
+        rendimiento de los sitios web al reducir el tamaño de los archivos.
+      </h4>
+    </header>
+    <main>
+      <div class="minifier">
         <label for="fileType">Selecciona el tipo de archivo:</label>
         <select id="fileType">
-            <option value="js">JavaScript</option>
-            <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="css">CSS</option>
         </select>
 
         <label for="codeInput">Ingresa el código:</label>
-        <textarea id="codeInput" rows="10" placeholder="Pega tu código aquí..."></textarea>
+        <textarea
+          id="codeInput"
+          rows="10"
+          placeholder="Pega tu código aquí..."
+        ></textarea>
 
         <button onclick="minifyCode()">Minificar</button>
-        <br>
+        <br />
         <button onclick="unminifyCode()">Desminificar</button>
 
         <textarea id="result" class="result"></textarea>
-    </div>
-
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
