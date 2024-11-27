@@ -24,25 +24,33 @@
       </h4>
     </header>
     <main>
-      <div class="minifier">
-        <label for="fileType">Selecciona el tipo de archivo:</label>
-        <select id="fileType">
-          <option value="js">JavaScript</option>
-          <option value="css">CSS</option>
-        </select>
+      <div class="container">
+        <fieldset>
+          <legend>Minificador de JavaScript y CSS</legend>
+          <p>
+            Este minificador de JavaScript y CSS te permite reducir el tamaño de
+            tus archivos de código. Pega tu código en el área de texto y
+            selecciona el tipo de archivo para minificarlo.
+          </p>
+          <div class="minifier">
+            <label for="fileType">Selecciona el tipo de archivo:</label>
+            <select id="fileType">
+              <option value="js">JavaScript</option>
+              <option value="css">CSS</option>
+            </select>
 
-        <label for="codeInput">Ingresa el código:</label>
-        <textarea
-          id="codeInput"
-          rows="10"
-          placeholder="Pega tu código aquí..."
-        ></textarea>
-
-        <button onclick="minifyCode()">Minificar</button>
-        <br />
-        <button onclick="unminifyCode()">Desminificar</button>
-
-        <textarea id="result" class="result"></textarea>
+            <label for="codeInput">Ingresa el código:</label>
+            <textarea
+              id="codeInput"
+              rows="10"
+              placeholder="Pega tu código aquí..."
+            ></textarea>
+            <button onclick="minifyCode()">Minificar</button>
+            <br />
+            <button onclick="unminifyCode()">Desminificar</button>
+            <textarea id="result" class="result"></textarea>
+          </div>
+        </fieldset>
       </div>
     </main>
     <footer>
